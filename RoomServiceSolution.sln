@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomServiceUI", "RoomServiceUI\RoomServiceUI.csproj", "{ABAF4BD5-D722-4C19-A41C-EE6A100CFE88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomServiceLibrary", "RoomServiceLibrary\RoomServiceLibrary.csproj", "{AD74513C-EB66-4F23-82B0-D529A0894A77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABAF4BD5-D722-4C19-A41C-EE6A100CFE88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABAF4BD5-D722-4C19-A41C-EE6A100CFE88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABAF4BD5-D722-4C19-A41C-EE6A100CFE88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABAF4BD5-D722-4C19-A41C-EE6A100CFE88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD74513C-EB66-4F23-82B0-D529A0894A77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD74513C-EB66-4F23-82B0-D529A0894A77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD74513C-EB66-4F23-82B0-D529A0894A77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD74513C-EB66-4F23-82B0-D529A0894A77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E9E7B774-65E9-4923-9FF4-FEFAF710DF6C}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ABAF4BD5-D722-4C19-A41C-EE6A100CFE88}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RoomServiceUI</RootNamespace>
+    <AssemblyName>RoomServiceUI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net48\FontAwesome.Sharp.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.2.2.3.1\lib\net48\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.Base, Version=19.1460.0.54, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grid.Windows, Version=19.1460.0.54, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Shared.Base, Version=19.1460.0.54, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Shared.Windows, Version=19.1460.0.54, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.SpellChecker.Base, Version=19.1460.0.54, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Tools.Base, Version=19.1460.0.54, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Tools.Windows, Version=19.1460.0.54, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WaissLibraryStandard">
+      <HintPath>..\..\WaissLibraryStandard\WaissLibraryStandard\bin\Debug\netstandard2.0\WaissLibraryStandard.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\FormHelper.cs" />
+    <Compile Include="Models\AdminModel.cs" />
+    <Compile Include="Models\AdminTransactionModel.cs" />
+    <Compile Include="Models\CustomerModel.cs" />
+    <Compile Include="Models\EmployeeModel.cs" />
+    <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\ReceptionTransactionModel.cs" />
+    <Compile Include="Models\RoomModel.cs" />
+    <Compile Include="Models\SelectedEmployeeModel.cs" />
+    <Compile Include="Models\SelectedLoginModel.cs" />
+    <Compile Include="Models\SelectedRoomModel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\MockData.cs" />
+    <Compile Include="Templates\EmployeeTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Templates\EmployeeTemplate.Designer.cs">
+      <DependentUpon>EmployeeTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\InvoiceTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Templates\InvoiceTemplate.Designer.cs">
+      <DependentUpon>InvoiceTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\LoginAccountTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Templates\LoginAccountTemplate.Designer.cs">
+      <DependentUpon>LoginAccountTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\ReceptionRoomTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Templates\ReceptionRoomTemplate.Designer.cs">
+      <DependentUpon>ReceptionRoomTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\RoomTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Templates\RoomTemplate.Designer.cs">
+      <DependentUpon>RoomTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\ReceptionRoomsViewModel.cs" />
+    <Compile Include="ViewModels\ReceptionTransactionsViewModel.cs" />
+    <Compile Include="ViewModels\TransactionsViewModel.cs" />
+    <Compile Include="Views\AddEmployeePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AddEmployeePage.Designer.cs">
+      <DependentUpon>AddEmployeePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddRoomPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AddRoomPage.Designer.cs">
+      <DependentUpon>AddRoomPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AdminPage.Designer.cs">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AppShell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AppShell.Designer.cs">
+      <DependentUpon>AppShell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BookDetailPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\BookDetailPage.Designer.cs">
+      <DependentUpon>BookDetailPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BookRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\BookRoom.Designer.cs">
+      <DependentUpon>BookRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EmployeeDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\EmployeeDetail.Designer.cs">
+      <DependentUpon>EmployeeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EmployeesPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\EmployeesPage.Designer.cs">
+      <DependentUpon>EmployeesPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReceptionPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ReceptionPage.Designer.cs">
+      <DependentUpon>ReceptionPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReceptionRoomsPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ReceptionRoomsPage.Designer.cs">
+      <DependentUpon>ReceptionRoomsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReceptionTransactionsPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ReceptionTransactionsPage.Designer.cs">
+      <DependentUpon>ReceptionTransactionsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RoomDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\RoomDetail.Designer.cs">
+      <DependentUpon>RoomDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RoomsPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\RoomsPage.Designer.cs">
+      <DependentUpon>RoomsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SettingsPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SettingsPage.Designer.cs">
+      <DependentUpon>SettingsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TransactionsPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TransactionsPage.Designer.cs">
+      <DependentUpon>TransactionsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormStrings.am-ET.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WinFormStrings.am-ET.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WinFormStrings.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Templates\EmployeeTemplate.resx">
+      <DependentUpon>EmployeeTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\InvoiceTemplate.am-ET.resx">
+      <DependentUpon>InvoiceTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\InvoiceTemplate.resx">
+      <DependentUpon>InvoiceTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LoginAccountTemplate.resx">
+      <DependentUpon>LoginAccountTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\ReceptionRoomTemplate.am-ET.resx">
+      <DependentUpon>ReceptionRoomTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\ReceptionRoomTemplate.resx">
+      <DependentUpon>ReceptionRoomTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\RoomTemplate.am-ET.resx">
+      <DependentUpon>RoomTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\RoomTemplate.resx">
+      <DependentUpon>RoomTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AddEmployeePage.am-ET.resx">
+      <DependentUpon>AddEmployeePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AddEmployeePage.resx">
+      <DependentUpon>AddEmployeePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AddRoomPage.am-ET.resx">
+      <DependentUpon>AddRoomPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AddRoomPage.resx">
+      <DependentUpon>AddRoomPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AdminPage.am-ET.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AdminPage.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AppShell.am-ET.resx">
+      <DependentUpon>AppShell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AppShell.en-US.resx">
+      <DependentUpon>AppShell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AppShell.resx">
+      <DependentUpon>AppShell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BookDetailPage.am-ET.resx">
+      <DependentUpon>BookDetailPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BookDetailPage.resx">
+      <DependentUpon>BookDetailPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BookRoom.am-ET.resx">
+      <DependentUpon>BookRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BookRoom.resx">
+      <DependentUpon>BookRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EmployeeDetail.am-ET.resx">
+      <DependentUpon>EmployeeDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EmployeeDetail.resx">
+      <DependentUpon>EmployeeDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EmployeesPage.am-ET.resx">
+      <DependentUpon>EmployeesPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EmployeesPage.resx">
+      <DependentUpon>EmployeesPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ReceptionPage.am-ET.resx">
+      <DependentUpon>ReceptionPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ReceptionPage.resx">
+      <DependentUpon>ReceptionPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ReceptionRoomsPage.am-ET.resx">
+      <DependentUpon>ReceptionRoomsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ReceptionRoomsPage.resx">
+      <DependentUpon>ReceptionRoomsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ReceptionTransactionsPage.am-ET.resx">
+      <DependentUpon>ReceptionTransactionsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ReceptionTransactionsPage.resx">
+      <DependentUpon>ReceptionTransactionsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RoomDetail.am-ET.resx">
+      <DependentUpon>RoomDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RoomDetail.resx">
+      <DependentUpon>RoomDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RoomsPage.am-ET.resx">
+      <DependentUpon>RoomsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RoomsPage.resx">
+      <DependentUpon>RoomsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SettingsPage.resx">
+      <DependentUpon>SettingsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TransactionsPage.am-ET.resx">
+      <DependentUpon>TransactionsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TransactionsPage.resx">
+      <DependentUpon>TransactionsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormStrings.am-ET.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WinFormStrings.am-ET.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormStrings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WinFormStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueHam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImagePlaceholder.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MockImageWorkerProfilePicture432.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\room7.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

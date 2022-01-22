@@ -1,0 +1,678 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BtnSave.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BtnSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>908, 549</value>
+  </data>
+  <data name="BtnSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 40</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BtnSave.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="BtnSave.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="&gt;&gt;BtnSave.Name" xml:space="preserve">
+    <value>BtnSave</value>
+  </data>
+  <data name="&gt;&gt;BtnSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnSave.Parent" xml:space="preserve">
+    <value>PnlAddEmployePage</value>
+  </data>
+  <data name="&gt;&gt;BtnSave.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 380</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 191</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>PnlAddEmployePage</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="PBProfilePicture.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 148</value>
+  </data>
+  <data name="PBProfilePicture.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 191</value>
+  </data>
+  <data name="PBProfilePicture.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="PBProfilePicture.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;PBProfilePicture.Name" xml:space="preserve">
+    <value>PBProfilePicture</value>
+  </data>
+  <data name="&gt;&gt;PBProfilePicture.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PBProfilePicture.Parent" xml:space="preserve">
+    <value>PnlAddEmployePage</value>
+  </data>
+  <data name="&gt;&gt;PBProfilePicture.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="CBJob.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="CBJob.Location" type="System.Drawing.Point, System.Drawing">
+    <value>810, 72</value>
+  </data>
+  <data name="CBJob.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 30</value>
+  </data>
+  <data name="CBJob.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;CBJob.Name" xml:space="preserve">
+    <value>CBJob</value>
+  </data>
+  <data name="&gt;&gt;CBJob.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CBJob.Parent" xml:space="preserve">
+    <value>PnlAddEmployePage</value>
+  </data>
+  <data name="&gt;&gt;CBJob.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="TBPhoneNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>810, 36</value>
+  </data>
+  <data name="TBPhoneNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 23</value>
+  </data>
+  <data name="TBPhoneNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TBPhoneNumber.Name" xml:space="preserve">
+    <value>TBPhoneNumber</value>
+  </data>
+  <data name="&gt;&gt;TBPhoneNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TBPhoneNumber.Parent" xml:space="preserve">
+    <value>PnlAddEmployePage</value>
+  </data>
+  <data name="&gt;&gt;TBPhoneNumber.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="LblJob.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblJob.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 12pt</value>
+  </data>
+  <data name="LblJob.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblJob.Location" type="System.Drawing.Point, System.Drawing">
+    <value>764, 75</value>
+  </data>
+  <data name="LblJob.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 18</value>
+  </data>
+  <data name="LblJob.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LblJob.Text" xml:space="preserve">
+    <value>Job</value>
+  </data>
+  <data name="&gt;&gt;LblJob.Name" xml:space="preserve">
+    <value>LblJob</value>
+  </data>
+  <data name="&gt;&gt;LblJob.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblJob.Parent" xml:space="preserve">
+    <value>PnlAddEmployePage</value>
+  </data>
+  <data name="&gt;&gt;LblJob.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="LblPhoneNumber.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblPhoneNumber.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 12pt</value>
+  </data>
+  <data name="LblPhoneNumber.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblPhoneNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>674, 36</value>
+  </data>
+  <data name="LblPhoneNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 18</value>
+  </data>
+  <data name="LblPhoneNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LblPhoneNumber.Text" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="&gt;&gt;LblPhoneNumber.Name" xml:space="preserve">
+    <value>LblPhoneNumber</value>
+  </data>
+  <data name="&gt;&gt;LblPhoneNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblPhoneNumber.Parent" xml:space="preserve">
+    <value>PnlAddEmployePage</value>
+  </data>
+  <data name="&gt;&gt;LblPhoneNumber.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="TBIdNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>515, 75</value>
+  </data>
+  <data name="TBIdNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 23</value>
+  </data>
+  <data name="TBIdNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TBIdNumber.Name" xml:space="preserve">
+    <value>TBIdNumber</value>
+  </data>
+  <data name="&gt;&gt;TBIdNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TBIdNumber.Parent" xml:space="preserve">
+    <value>PnlAddEmployePage</value>
+  </data>
+  <data name="&gt;&gt;TBIdNumber.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="TBSalary.Location" type="System.Drawing.Point, System.Drawing">
+    <value>515, 36</value>
+  </data>
+  <data name="TBSalary.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 23</value>
+  </data>
+  <data name="TBSalary.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TBSalary.Name" xml:space="preserve">
+    <value>TBSalary</value>
+  </data>
+  <data name="&gt;&gt;TBSalary.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TBSalary.Parent" xml:space="preserve">
+    <value>PnlAddEmployePage</value>
+  </data>
+  <data name="&gt;&gt;TBSalary.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="LblIdNumber.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblIdNumber.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 12pt</value>
+  </data>
+  <data name="LblIdNumber.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblIdNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>409, 75</value>
+  </data>
+  <data name="LblIdNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 18</value>
+  </data>
+  <data name="LblIdNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LblIdNumber.Text" xml:space="preserve">
+    <value>Id Number</value>
+  </data>
+  <data name="&gt;&gt;LblIdNumber.Name" xml:space="preserve">
+    <value>LblIdNumber</value>
+  </data>
+  <data name="&gt;&gt;LblIdNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblIdNumber.Parent" xml:space="preserve">
+    <value>PnlAddEmployePage</value>
+  </data>
+  <data name="&gt;&gt;LblIdNumber.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="LblSalary.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblSalary.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 12pt</value>
+  </data>
+  <data name="LblSalary.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblSalary.Location" type="System.Drawing.Point, System.Drawing">
+    <value>439, 35</value>
+  </data>
+  <data name="LblSalary.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 18</value>
+  </data>
+  <data name="LblSalary.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LblSalary.Text" xml:space="preserve">
+    <value>Salary</value>
+  </data>
+  <data name="&gt;&gt;LblSalary.Name" xml:space="preserve">
+    <value>LblSalary</value>
+  </data>
+  <data name="&gt;&gt;LblSalary.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblSalary.Parent" xml:space="preserve">
+    <value>PnlAddEmployePage</value>
+  </data>
+  <data name="&gt;&gt;LblSalary.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="TBAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 75</value>
+  </data>
+  <data name="TBAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 23</value>
+  </data>
+  <data name="TBAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TBAddress.Name" xml:space="preserve">
+    <value>TBAddress</value>
+  </data>
+  <data name="&gt;&gt;TBAddress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TBAddress.Parent" xml:space="preserve">
+    <value>PnlAddEmployePage</value>
+  </data>
+  <data name="&gt;&gt;TBAddress.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="LblMessage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblMessage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 11.25pt</value>
+  </data>
+  <data name="LblMessage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblMessage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 9</value>
+  </data>
+  <data name="LblMessage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 18</value>
+  </data>
+  <data name="LblMessage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LblMessage.Text" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="LblMessage.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;LblMessage.Name" xml:space="preserve">
+    <value>LblMessage</value>
+  </data>
+  <data name="&gt;&gt;LblMessage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblMessage.Parent" xml:space="preserve">
+    <value>PnlAddEmployePage</value>
+  </data>
+  <data name="&gt;&gt;LblMessage.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="LblDocs.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblDocs.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 12pt</value>
+  </data>
+  <data name="LblDocs.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblDocs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 355</value>
+  </data>
+  <data name="LblDocs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 18</value>
+  </data>
+  <data name="LblDocs.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LblDocs.Text" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="&gt;&gt;LblDocs.Name" xml:space="preserve">
+    <value>LblDocs</value>
+  </data>
+  <data name="&gt;&gt;LblDocs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblDocs.Parent" xml:space="preserve">
+    <value>PnlAddEmployePage</value>
+  </data>
+  <data name="&gt;&gt;LblDocs.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="LblProfilePicture.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblProfilePicture.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 12pt</value>
+  </data>
+  <data name="LblProfilePicture.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblProfilePicture.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 123</value>
+  </data>
+  <data name="LblProfilePicture.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 18</value>
+  </data>
+  <data name="LblProfilePicture.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LblProfilePicture.Text" xml:space="preserve">
+    <value>Profile Picture</value>
+  </data>
+  <data name="&gt;&gt;LblProfilePicture.Name" xml:space="preserve">
+    <value>LblProfilePicture</value>
+  </data>
+  <data name="&gt;&gt;LblProfilePicture.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblProfilePicture.Parent" xml:space="preserve">
+    <value>PnlAddEmployePage</value>
+  </data>
+  <data name="&gt;&gt;LblProfilePicture.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="LblAddress.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblAddress.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 12pt</value>
+  </data>
+  <data name="LblAddress.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 75</value>
+  </data>
+  <data name="LblAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 18</value>
+  </data>
+  <data name="LblAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LblAddress.Text" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="&gt;&gt;LblAddress.Name" xml:space="preserve">
+    <value>LblAddress</value>
+  </data>
+  <data name="&gt;&gt;LblAddress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblAddress.Parent" xml:space="preserve">
+    <value>PnlAddEmployePage</value>
+  </data>
+  <data name="&gt;&gt;LblAddress.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="TBName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 35</value>
+  </data>
+  <data name="TBName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 23</value>
+  </data>
+  <data name="TBName.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TBName.Name" xml:space="preserve">
+    <value>TBName</value>
+  </data>
+  <data name="&gt;&gt;TBName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TBName.Parent" xml:space="preserve">
+    <value>PnlAddEmployePage</value>
+  </data>
+  <data name="&gt;&gt;TBName.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="LblName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 12pt</value>
+  </data>
+  <data name="LblName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>70, 37</value>
+  </data>
+  <data name="LblName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 18</value>
+  </data>
+  <data name="LblName.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LblName.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="&gt;&gt;LblName.Name" xml:space="preserve">
+    <value>LblName</value>
+  </data>
+  <data name="&gt;&gt;LblName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblName.Parent" xml:space="preserve">
+    <value>PnlAddEmployePage</value>
+  </data>
+  <data name="&gt;&gt;LblName.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="PnlAddEmployePage.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="PnlAddEmployePage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PnlAddEmployePage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1054, 601</value>
+  </data>
+  <data name="PnlAddEmployePage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PnlAddEmployePage.Name" xml:space="preserve">
+    <value>PnlAddEmployePage</value>
+  </data>
+  <data name="&gt;&gt;PnlAddEmployePage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PnlAddEmployePage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PnlAddEmployePage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>am-ET</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>10, 22</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1054, 601</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 14.25pt</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>AddEmployeePage</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AddEmployeePage</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
